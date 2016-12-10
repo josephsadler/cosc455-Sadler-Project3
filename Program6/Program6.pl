@@ -1,6 +1,7 @@
 
 :- style_check(-singleton).
 
+%Facts
 salary([jacqueline, bouvier], 23000).
 salary([patty, bouvier], 23000).
 salary([selma, bouvier], 23000).
@@ -26,6 +27,8 @@ salary([lisa, simpson], 500).
 salary([maggie, simpson], 0).
 salary([marge, simpson], 10000).
 
+
+%Rules
 
 family_income(Family,Income):- collect_income(Family,Salary_List),add_incomes(Salary_List,Income).
 
